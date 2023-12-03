@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Online Courses</title>
+</head>
+<body>
+    <header>
+        <h1>Online Courses</h1>
+    </header>
+    <section id="courses">
+        <div class="course-container">
+            <h2>Introduction to HTML</h2>
+            <p class="price">$49.99</p>
+            <button class="enroll-btn" data-course="Introduction to HTML">Enroll</button>
+        </div>
+        <div class="course-container">
+            <h2>CSS Basics</h2>
+            <p class="price">$59.99</p>
+            <button class="enroll-btn" data-course="CSS Basics">Enroll</button>
+        </div>
+        <div class="course-container">
+            <h2>JavaScript Fundamentals</h2>
+            <p class="price">$69.99</p>
+            <button class="enroll-btn" data-course="JavaScript Fundamentals">Enroll</button>
+        </div>
+    </section>
+    <section id="enrollment-form" style="display: none;">
+        <h2>Enroll in a Course</h2>
+        <form id="enrollForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="course">Selected Course:</label>
+            <input type="text" id="selectedCourse" name="selectedCourse" readonly required>
+            <button type="submit">Enroll</button>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
